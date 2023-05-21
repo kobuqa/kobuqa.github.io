@@ -268,7 +268,7 @@ export default function Home() {
             <div className="z-[10] bg-primary h-full w-full flex flex-col p-4 gap-2">
               <span className="text-lg text-center">#3 Omni</span>
               <span className="text-center">(Jul 2020 - Mar 2021)</span>
-              <span className="text-md text-slate-400">
+              <span className="text-sm text-slate-400">
                 Office management system designed for the new generation of
                 workforce. It provides managers with centralized system to
                 manage employees and employee-related matters. It contains
