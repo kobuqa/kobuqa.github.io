@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center p-24 gap-10">
+    <main className="flex min-h-screen flex-col items-center p-24 gap-14">
       <section className="flex flex-col gap-8 items-center">
         <Image
           src="/xd-white.png"
@@ -36,8 +36,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="w-full max-w-[70vw] px-4 flex flex-col">
-        <h3 className="text-slate-500 text-xl mb-4">Experience</h3>
+      <section className="w-full max-w-[80vw] px-4 flex flex-col">
         <ul className="flex gap-6 items-center">
           <li className="flex flex-col gap-2">
             <h3>Web Developer</h3>
@@ -135,8 +134,7 @@ export default function Home() {
           </li>
         </ul>
       </section>
-      <section className="w-full max-w-[70vw] px-4 flex flex-col">
-        <h3 className="text-slate-500 text-xl mb-10">Projects</h3>
+      <section className="w-full max-w-[80vw] px-4 flex flex-col">
         <ul className="grid grid-cols-3 gap-12">
           <li className="project relative flex">
             <div className="z-[10] bg-primary h-full w-full flex flex-col p-4 gap-2">
@@ -266,66 +264,72 @@ export default function Home() {
             </div>
           </li>
 
-          <li className="flex flex-col">
-            <span className="text-lg text-violet-500">
-              #3 Omni (Jul 2020 - Mar 2021)
-            </span>
-            <span className="text-md text-slate-400">
-              Office management system designed for the new generation of
-              workforce. It provides managers with centralized system to manage
-              employees and employee-related matters. It contains HR-related
-              features, that help Hrs to manage employees during all company
-              stages.
-            </span>
-            <span>Team size: 8</span>
-            <span>Role: Front End Developer</span>
+          <li className="project relative flex">
+            <div className="z-[10] bg-primary h-full w-full flex flex-col p-4 gap-2">
+              <span className="text-lg text-center">#3 Omni</span>
+              <span className="text-center">(Jul 2020 - Mar 2021)</span>
+              <span className="text-md text-slate-400">
+                Office management system designed for the new generation of
+                workforce. It provides managers with centralized system to
+                manage employees and employee-related matters. It contains
+                HR-related features, that help Hrs to manage employees during
+                all company stages.
+              </span>
+              <span>Team size: 8</span>
+              <span>Role: Front End Developer</span>
 
-            <ul className="flex gap-x-4 items-center flex-wrap">
-              <li className="flex items-center gap-2">
-                <Image src="/react.png" height={16} width={16} alt="React" />
-                React
-              </li>
-              <li className="flex items-center gap-2">
-                <Image src="/redux.png" height={16} width={16} alt="Redux" />
-                Redux
-              </li>
+              <ul className="flex gap-4 items-center flex-wrap">
+                <li className="flex items-center gap-2 text-xs">
+                  <Image src="/react.png" height={16} width={16} alt="React" />
+                  React
+                </li>
+                <li className="flex items-center gap-2 text-xs">
+                  <Image src="/redux.png" height={16} width={16} alt="Redux" />
+                  Redux
+                </li>
 
-              <li className="flex items-center gap-2">
-                <Image src="/formik.png" height={16} width={16} alt="Formik" />
-                Formik
-              </li>
-              <li className="flex items-center gap-2">
-                <Image
-                  src="/typescript.png"
-                  height={16}
-                  width={16}
-                  alt="TypeScript"
-                />
-                TypeScript
-              </li>
-              <li className="flex items-center gap-2">
-                <Image
-                  src="/antd.png"
-                  height={16}
-                  width={16}
-                  alt="Ant Design"
-                />
-                Ant Design
-              </li>
-              <li className="flex items-center gap-2">
-                <Image
-                  src="/storybook.png"
-                  height={16}
-                  width={16}
-                  alt="Storybook"
-                />
-                Storybook
-              </li>
-              <li className="flex items-center gap-2">
-                <Image src="/axios.png" height={16} width={16} alt="Axios" />
-                axios
-              </li>
-            </ul>
+                <li className="flex items-center gap-2 text-xs">
+                  <Image
+                    src="/formik.png"
+                    height={16}
+                    width={16}
+                    alt="Formik"
+                  />
+                  Formik
+                </li>
+                <li className="flex items-center gap-2 text-xs">
+                  <Image
+                    src="/typescript.png"
+                    height={16}
+                    width={16}
+                    alt="TypeScript"
+                  />
+                  TypeScript
+                </li>
+                <li className="flex items-center gap-2 text-xs">
+                  <Image
+                    src="/antd.png"
+                    height={16}
+                    width={16}
+                    alt="Ant Design"
+                  />
+                  Ant Design
+                </li>
+                <li className="flex items-center gap-2 text-xs">
+                  <Image
+                    src="/storybook.png"
+                    height={16}
+                    width={16}
+                    alt="Storybook"
+                  />
+                  Storybook
+                </li>
+                <li className="flex items-center gap-2 text-xs">
+                  <Image src="/axios.png" height={16} width={16} alt="Axios" />
+                  axios
+                </li>
+              </ul>
+            </div>
           </li>
           <li className="flex flex-col">
             <span className="text-lg text-violet-500">
