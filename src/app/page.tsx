@@ -37,7 +37,7 @@ export default function Home() {
       </section>
 
       <section className="w-full max-w-[80vw] px-4 flex flex-col">
-        <ul className="flex gap-6 items-center">
+        <ul className="flex gap-6 items-center justify-center">
           <li className="flex flex-col gap-2">
             <h3>Web Developer</h3>
             <h5 className="flex items-center gap-2">
