@@ -1,113 +1,788 @@
-import Image from 'next/image'
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px]">
+    <main className="flex min-h-screen flex-col items-center p-24 gap-10">
+      <section className="flex flex-col gap-8 items-center">
         <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+          src="/profile_pic.png"
+          width={256}
+          height={256}
+          alt="Profile Picture"
+          className="rounded-full border-4 border-white"
         />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
+        <h1 className="text-4xl">Aliaksandr Matveichykau</h1>
+        {/* <h4 className="text-2xl">Web Developer</h4> */}
+      </section>
+      <section className="flex flex-col gap-4 max-w-[50vw]">
+        <h2 className="text-xl">
+          Enthusiastic and proactive Web Developer with 5+ years of experience.
+          Knowledgeable in the user interface, debugging processes. Able to
+          effectively self-manage during independent projects, as well as
+          collaborate in a team setting.
+        </h2>
+      </section>
+      <section className="w-full max-w-[70vw] px-4 flex flex-col">
+        <h3 className="text-slate-500 text-xl mb-4">Education</h3>
+        <a href="https://gsmu.by/" className="text-lg ">
+          Homel State Medical University
         </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
+        <span className="text-md">Pediatric Orthopedics Surgeon 👨🏻‍⚕️💉👶🏻</span>
+        <span>2011 - 2017 🎓</span>
+      </section>
+      <section className="w-full max-w-[70vw] px-4 flex flex-col">
+        <h3 className="text-slate-500 text-xl mb-4">Experience</h3>
+        <ul className="flex gap-6 items-center">
+          <li className="flex flex-col gap-2">
+            <h3>Web Developer</h3>
+            <h5 className="flex items-center gap-2">
+              <Image
+                src="/upwork.png"
+                alt="Upwork"
+                width={32}
+                height={32}
+                className="rounded-full"
+              />
+              Freelance
+            </h5>
+            <h6 className="text-sm">Aug 2020 - Oct 2020</h6>
+          </li>
+          <Image
+            src="/next-arrow.png"
+            alt="Next Arrow"
+            width={16}
+            height={16}
+          />
+          <li className="flex flex-col gap-2">
+            <h3>Web Developer</h3>
+            <h5 className="flex items-center gap-2">
+              <Image
+                src="/iba.jpeg"
+                alt="IBA Group"
+                width={32}
+                height={32}
+                className="rounded-full"
+              />
+              IBA Group
+            </h5>
+            <h6 className="text-sm">Aug 2020 - Oct 2020</h6>
+          </li>
+          <Image
+            src="/next-arrow.png"
+            alt="Next Arrow"
+            width={16}
+            height={16}
+          />
+          <li className="flex flex-col gap-2">
+            <h3>Web Developer</h3>
+            <h5 className="flex items-center gap-2">
+              <Image
+                src="/andersen.jpeg"
+                alt="Andersen Lab"
+                width={32}
+                height={32}
+                className="rounded-full"
+              />
+              Andersen
+            </h5>
+            <h6 className="text-sm">Oct 2020 - Aug 2021</h6>
+          </li>
+          <Image
+            src="/next-arrow.png"
+            alt="Next Arrow"
+            width={16}
+            height={16}
+          />
+          <li className="flex flex-col gap-2">
+            <h3>Web Developer</h3>
+            <h5 className="flex items-center gap-2">
+              <Image
+                src="/innowise.jpeg"
+                alt="Innowise Group"
+                width={32}
+                height={32}
+                className="rounded-full"
+              />
+              Innowise
+            </h5>
+            <h6 className="text-sm">Aug 2021 - Dec 2021</h6>
+          </li>
+          <Image
+            src="/next-arrow.png"
+            alt="Next Arrow"
+            width={16}
+            height={16}
+          />
+          <li className="flex flex-col gap-2">
+            <h3>Web Developer</h3>
+            <h5 className="flex items-center gap-2">
+              <Image
+                src="/mbicycle.jpeg"
+                alt="Mbicycle"
+                width={32}
+                height={32}
+                className="rounded-full"
+              />
+              MBicycle
+            </h5>
+            <h6 className="text-sm">Dec 2021 - Present</h6>
+          </li>
+        </ul>
+      </section>
+      <section className="w-full max-w-[70vw] px-4 flex flex-col">
+        <h3 className="text-slate-500 text-xl mb-4">Projects</h3>
+        <ul className="flex flex-col gap-6">
+          <li className="flex flex-col">
+            <span>#1 - Skill Will</span>
+            <span>Team size: 10</span>
+            <span>Duration: Aug 2020 - Oct 2020</span>
+            <span>Role: Front End Developer</span>
+            <span>
+              Description: Performance Review platform for employees. Included
+              program management, assesment previews and history
             </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
+            <ul className="flex gap-x-4 items-center flex-wrap">
+              <li>
+                <span>Stack:</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <Image src="/react.png" height={16} width={16} alt="React" />
+                React
+              </li>
+              <li className="flex items-center gap-2">
+                <Image src="/redux.png" height={16} width={16} alt="Redux" />
+                Redux
+              </li>
+              <li className="flex items-center gap-2">
+                <Image
+                  src="/typescript.png"
+                  height={16}
+                  width={16}
+                  alt="TypeScript"
+                />
+                TypeScript
+              </li>
+              <li className="flex items-center gap-2">
+                <Image
+                  src="/mui.png"
+                  height={16}
+                  width={16}
+                  alt="Material UI"
+                />
+                Material UI
+              </li>
+              <li className="flex items-center gap-2">
+                <Image src="/axios.png" height={16} width={16} alt="Axios" />
+                axios
+              </li>
+            </ul>
+          </li>
+          <li className="flex flex-col">
+            <span>#2 - MassCRM</span>
+            <span>Team size: 12</span>
+            <span>Duration: Oct 2020 - Jul 2020</span>
+            <span>Role: Front End Developer</span>
+            <span>
+              Description: The goal of the project is creation of a CRM system
+              for marketing mailing, the system is used for the internal
+              purposes of the company. It also contains information about
+              companies and clients.
             </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
+            <ul className="flex gap-x-4 items-center flex-wrap">
+              <li>
+                <span>Stack:</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <Image src="/react.png" height={16} width={16} alt="React" />
+                React
+              </li>
+              <li className="flex items-center gap-2">
+                <Image src="/redux.png" height={16} width={16} alt="Redux" />
+                Redux
+              </li>
+              <li className="flex items-center gap-2">
+                <Image src="/saga.png" height={16} width={16} alt="Saga" />
+                Redux Saga
+              </li>
+              <li className="flex items-center gap-2">
+                <Image
+                  src="/websocket.png"
+                  height={16}
+                  width={16}
+                  alt="Websocket"
+                />
+                WebSocket
+              </li>
+              <li className="flex items-center gap-2">
+                <Image src="/formik.png" height={16} width={16} alt="Formik" />
+                Formik
+              </li>
+              <li className="flex items-center gap-2">
+                <Image src="/jest.png" height={16} width={16} alt="Jest" />
+                Jest
+              </li>
+              <li className="flex items-center gap-2">
+                <Image src="/enzyme.png" height={16} width={16} alt="Enzyme" />
+                Enzyme
+              </li>
+              <li className="flex items-center gap-2">
+                <Image
+                  src="/typescript.png"
+                  height={16}
+                  width={16}
+                  alt="TypeScript"
+                />
+                TypeScript
+              </li>
+              <li className="flex items-center gap-2">
+                <Image
+                  src="/mui.png"
+                  height={16}
+                  width={16}
+                  alt="Material UI"
+                />
+                Material UI
+              </li>
+              <li className="flex items-center gap-2">
+                <Image src="/axios.png" height={16} width={16} alt="Axios" />
+                axios
+              </li>
+            </ul>
+          </li>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
+          <li className="flex flex-col">
+            <span>#3 - Omni</span>
+            <span>Team size: 8</span>
+            <span>Duration: Jul 2020 - Mar 2021</span>
+            <span>Role: Front End Developer</span>
+            <span>
+              Description: Office management system designed for the new
+              generation of workforce. It provides managers with centralized
+              system to manage employees and employee-related matters. It
+              contains HR-related features, that help Hrs to manage employees
+              during all company stages.
             </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+            <ul className="flex gap-x-4 items-center flex-wrap">
+              <li>
+                <span>Stack:</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <Image src="/react.png" height={16} width={16} alt="React" />
+                React
+              </li>
+              <li className="flex items-center gap-2">
+                <Image src="/redux.png" height={16} width={16} alt="Redux" />
+                Redux
+              </li>
+
+              <li className="flex items-center gap-2">
+                <Image src="/formik.png" height={16} width={16} alt="Formik" />
+                Formik
+              </li>
+              <li className="flex items-center gap-2">
+                <Image
+                  src="/typescript.png"
+                  height={16}
+                  width={16}
+                  alt="TypeScript"
+                />
+                TypeScript
+              </li>
+              <li className="flex items-center gap-2">
+                <Image
+                  src="/antd.png"
+                  height={16}
+                  width={16}
+                  alt="Ant Design"
+                />
+                Ant Design
+              </li>
+              <li className="flex items-center gap-2">
+                <Image
+                  src="/storybook.png"
+                  height={16}
+                  width={16}
+                  alt="Storybook"
+                />
+                Storybook
+              </li>
+              <li className="flex items-center gap-2">
+                <Image src="/axios.png" height={16} width={16} alt="Axios" />
+                axios
+              </li>
+            </ul>
+          </li>
+          <li className="flex flex-col">
+            <span>#4 - Sawayo</span>
+            <span>Team size: 12</span>
+            <span>Duration: Mar 2021 - Dec 2021</span>
+            <span>Role: Front End Developer</span>
+            <span>
+              Description: A system for business owners, that includes such
+              features as: • Time tracking • Contracts management • COVID-19
+              tests management • Generation of monthly reports
+            </span>
+            <ul className="flex gap-x-4 items-center flex-wrap">
+              <li>
+                <span>Stack:</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <Image src="/react.png" height={16} width={16} alt="React" />
+                React
+              </li>
+              <li className="flex items-center gap-2">
+                <Image src="/redux.png" height={16} width={16} alt="Redux" />
+                Redux Toolkit
+              </li>
+              <li className="flex items-center gap-2">
+                <Image src="/nx.png" height={16} width={16} alt="nx" />
+                nx
+              </li>
+              <li className="flex items-center gap-2">
+                <Image
+                  src="/graphql.png"
+                  height={16}
+                  width={16}
+                  alt="Graph QL"
+                />
+                GraphQL
+              </li>
+              <li className="flex items-center gap-2">
+                <Image
+                  src="/react-hook-form.png"
+                  height={16}
+                  width={16}
+                  alt="React Hook Form"
+                />
+                React Hook Form
+              </li>
+              <li className="flex items-center gap-2">
+                <Image
+                  src="/typescript.png"
+                  height={16}
+                  width={16}
+                  alt="TypeScript"
+                />
+                TypeScript
+              </li>
+              <li className="flex items-center gap-2">
+                <Image
+                  src="/mui.png"
+                  height={16}
+                  width={16}
+                  alt="Material UI"
+                />
+                Material UI
+              </li>
+              <li className="flex items-center gap-2">
+                <Image
+                  src="/storybook.png"
+                  height={16}
+                  width={16}
+                  alt="Storybook"
+                />
+                Storybook
+              </li>
+              <li className="flex items-center gap-2">
+                <Image src="/i18n.png" height={16} width={16} alt="i18n" />
+                i18n
+              </li>
+            </ul>
+          </li>
+
+          <li className="flex flex-col">
+            <span>#5 - EasySnap</span>
+            <span>Team size: 7</span>
+            <span>Duration: Dec 2021 - Mar 2022</span>
+            <span>Role: Front End Developer</span>
+            <span>
+              Description: A high-end Web AR photo editor which allows users to
+              use custom presets like: • Eyelashes • Extension architecture •
+              Lips • Eyeshadow • Makeups • Face lifting
+            </span>
+            <ul className="flex gap-x-4 items-center flex-wrap">
+              <li>
+                <span>Stack:</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <Image src="/react.png" height={16} width={16} alt="React" />
+                React
+              </li>
+              <li className="flex items-center gap-2">
+                <Image src="/redux.png" height={16} width={16} alt="Redux" />
+                Redux Toolkit
+              </li>
+              <li className="flex items-center gap-2">
+                <Image src="/vite.png" height={16} width={16} alt="    Vite" />
+                Vite
+              </li>
+              <li className="flex items-center gap-2">
+                <Image src="/stripe.png" height={16} width={16} alt="Stripe" />
+                Stripe
+              </li>
+              <li className="flex items-center gap-2">
+                <Image
+                  src="/react-hook-form.png"
+                  height={16}
+                  width={16}
+                  alt="React Hook Form"
+                />
+                React Hook Form
+              </li>
+              <li className="flex items-center gap-2">
+                <Image
+                  src="/typescript.png"
+                  height={16}
+                  width={16}
+                  alt="TypeScript"
+                />
+                TypeScript
+              </li>
+              <li className="flex items-center gap-2">
+                <Image
+                  src="/mui.png"
+                  height={16}
+                  width={16}
+                  alt="Material UI"
+                />
+                Material UI
+              </li>
+              <li className="flex items-center gap-2">
+                <Image src="/axios.png" height={16} width={16} alt="Axios" />
+                axios
+              </li>
+              <li className="flex items-center gap-2">
+                <Image src="/jest.png" height={16} width={16} alt="Jest" />
+                Jest
+              </li>
+            </ul>
+          </li>
+
+          <li className="flex flex-col">
+            <span>#6 - TINT VTO</span>
+            <span>Team size: 9</span>
+            <span>Duration: Mar 2022 - Oct 2022</span>
+            <span>Role: Front End Developer</span>
+            <span>
+              Description: A Virtual Try On based project provides an extension
+              with deep analysis of face, cosmetics advisor by skin type,
+              showcase both webcam & photo, makeup transfer feature, that helps
+              to detect and find certain cosmetics by photo analysis.
+            </span>
+            <ul className="flex gap-x-4 items-center flex-wrap">
+              <li>
+                <span>Stack:</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <Image src="/svelte.png" height={16} width={16} alt="Svelte" />
+                Svelte
+              </li>
+              <li className="flex items-center gap-2">
+                <Image
+                  src="/banuba.png"
+                  height={16}
+                  width={16}
+                  alt="Banuba SDK"
+                />
+                Banuba SDK
+              </li>
+              <li className="flex items-center gap-2">
+                <Image src="/vite.png" height={16} width={16} alt="    Vite" />
+                Vite
+              </li>
+              <li className="flex items-center gap-2">
+                <Image
+                  src="/typescript.png"
+                  height={16}
+                  width={16}
+                  alt="TypeScript"
+                />
+                TypeScript
+              </li>
+              <li className="flex items-center gap-2">
+                <Image
+                  src="/headless-ui.png"
+                  height={16}
+                  width={16}
+                  alt="Svelte Headless UI"
+                />
+                Svelte Headless UI
+              </li>
+              <li className="flex items-center gap-1">
+                <Image
+                  src="/tailwindcss.png"
+                  height={16}
+                  width={16}
+                  alt="TailwindCSS"
+                />
+                Tailwind CSS
+              </li>
+              <li className="flex items-center gap-2">
+                <Image
+                  src="/svelte-query.svg"
+                  height={16}
+                  width={16}
+                  alt="Svelte Query"
+                />
+                Svelte Query
+              </li>
+              <li className="flex items-center gap-2">
+                <Image
+                  src="/graphql.png"
+                  height={16}
+                  width={16}
+                  alt="Graph QL"
+                />
+                GraphQL
+              </li>
+              <li className="flex items-center gap-2">
+                <Image src="/vitest.svg" height={16} width={16} alt="Vitest" />
+                Vitest
+              </li>
+            </ul>
+          </li>
+
+          <li className="flex flex-col">
+            <span>#7 - Together</span>
+            <span>Team size: 8</span>
+            <span>Duration: Oct 2022 - Dec 2022</span>
+            <span>Role: Front End Developer</span>
+            <span>
+              Description: An AD platform for traveling people around the world
+              to find or offer services & goods.
+            </span>
+            <ul className="flex gap-x-4 items-center flex-wrap">
+              <li>
+                <span>Stack:</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <Image src="/next.png" height={16} width={16} alt="Next" />
+                Next
+              </li>
+              <li className="flex items-center gap-2">
+                <Image src="/react.png" height={16} width={16} alt="React" />
+                React
+              </li>
+              <li className="flex items-center gap-2">
+                <Image src="/vite.png" height={16} width={16} alt="    Vite" />
+                Vite
+              </li>
+              <li className="flex items-center gap-2">
+                <Image src="/redux.png" height={16} width={16} alt="Redux" />
+                Redux
+              </li>
+              <li className="flex items-center gap-1">
+                <Image
+                  src="/tailwindcss.png"
+                  height={16}
+                  width={16}
+                  alt="TailwindCSS"
+                />
+                Tailwind CSS
+              </li>
+              <li className="flex items-center gap-2">
+                <Image
+                  src="/headless-ui.png"
+                  height={16}
+                  width={16}
+                  alt="React Headless UI"
+                />
+                React Headless UI
+              </li>
+              <li className="flex items-center gap-2">
+                <Image
+                  src="/notistack.png"
+                  height={16}
+                  width={16}
+                  alt="Notistack"
+                />
+                Notistack
+              </li>
+              <li className="flex items-center gap-2">
+                <Image
+                  src="/react-query.png"
+                  height={16}
+                  width={16}
+                  alt="React Query"
+                />
+                React Query
+              </li>
+              <li className="flex items-center gap-2">
+                <Image src="/sentry.png" height={16} width={16} alt="Sentry" />
+                Sentry
+              </li>
+            </ul>
+          </li>
+
+          <li className="flex flex-col">
+            <span>#7 - LazyGoat</span>
+            <span>Team size: 3</span>
+            <span>Duration: Dec 2022 - Feb 2023</span>
+            <span>Role: Front End Developer</span>
+            <span>
+              Description: Multiplatform interactive streaming platform that
+              provides a great opportunity to manage events with your favorite
+              streamers
+            </span>
+            <ul className="flex gap-x-4 items-center flex-wrap">
+              <li>
+                <span>Stack:</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <Image src="/next.png" height={16} width={16} alt="Next" />
+                Next
+              </li>
+              <li className="flex items-center gap-2">
+                <Image src="/react.png" height={16} width={16} alt="React" />
+                React
+              </li>
+              <li className="flex items-center gap-2">
+                <Image src="/vite.png" height={16} width={16} alt="    Vite" />
+                Vite
+              </li>
+              <li className="flex items-center gap-2">
+                <Image src="/redux.png" height={16} width={16} alt="Redux" />
+                Redux Toolkit
+              </li>
+              <li className="flex items-center gap-2">
+                <Image
+                  src="/redux.png"
+                  height={16}
+                  width={16}
+                  alt="RTK Query"
+                />
+                RTK Query
+              </li>
+              <li className="flex items-center gap-1">
+                <Image
+                  src="/tailwindcss.png"
+                  height={16}
+                  width={16}
+                  alt="TailwindCSS"
+                />
+                Tailwind CSS
+              </li>
+              <li className="flex items-center gap-2">
+                <Image
+                  src="/mui.png"
+                  height={16}
+                  width={16}
+                  alt="Material UI"
+                />
+                Material UI
+              </li>
+              <li className="flex items-center gap-2">
+                <Image
+                  src="/react-hook-form.png"
+                  height={16}
+                  width={16}
+                  alt="React Hook Form"
+                />
+                React Hook Form
+              </li>
+              <li className="flex items-center gap-2">
+                <Image
+                  src="/youtube.png"
+                  height={16}
+                  width={16}
+                  alt="Youtube API"
+                />
+                Youtube API
+              </li>
+              <li className="flex items-center gap-2">
+                <Image
+                  src="/twitch.png"
+                  height={16}
+                  width={16}
+                  alt=" Twitch API"
+                />
+                Twitch API
+              </li>
+            </ul>
+          </li>
+
+          <li className="flex flex-col">
+            <span>#8 - NDA</span>
+            <span>Team size: 5</span>
+            <span>Duration: Feb 2023 - Present</span>
+            <span>Role: Front End Developer</span>
+            <span>
+              Description: User Interface for management custom game events,
+              scheduling events, interactions while event is active.
+            </span>
+            <ul className="flex gap-x-4 items-center flex-wrap">
+              <li>
+                <span>Stack:</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <Image src="/next.png" height={16} width={16} alt="Next" />
+                Next
+              </li>
+              <li className="flex items-center gap-2">
+                <Image src="/react.png" height={16} width={16} alt="React" />
+                React
+              </li>
+              <li className="flex items-center gap-2">
+                <Image src="/vite.png" height={16} width={16} alt="    Vite" />
+                Vite
+              </li>
+              <li className="flex items-center gap-2">
+                <Image src="/redux.png" height={16} width={16} alt="Redux" />
+                Redux Toolkit
+              </li>
+              <li className="flex items-center gap-2">
+                <Image
+                  src="/redux.png"
+                  height={16}
+                  width={16}
+                  alt="RTK Query"
+                />
+                RTK Query
+              </li>
+              <li className="flex items-center gap-2">
+                <Image
+                  src="/framer-motion.png"
+                  height={16}
+                  width={16}
+                  alt="Framer Motion"
+                />
+                Framer Motion
+              </li>
+              <li className="flex items-center gap-1">
+                <Image
+                  src="/tailwindcss.png"
+                  height={16}
+                  width={16}
+                  alt="TailwindCSS"
+                />
+                Tailwind CSS
+              </li>
+              <li className="flex items-center gap-2">
+                <Image
+                  src="/headless-ui.png"
+                  height={16}
+                  width={16}
+                  alt="React Headless UI"
+                />
+                React Headless UI
+              </li>
+              <li className="flex items-center gap-2">
+                <Image
+                  src="/react-hook-form.png"
+                  height={16}
+                  width={16}
+                  alt="React Hook Form"
+                />
+                React Hook Form
+              </li>
+              <li className="flex items-center gap-2">
+                <Image src="/dayjs.png" height={16} width={16} alt="DayJs" />
+                Day.js
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
     </main>
-  )
+  );
 }
